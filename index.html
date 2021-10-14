@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 415px)">
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 780px)">
+    <title>ToDo app with HTML-CSS-JavaScript</title>
+</head>
+<body>
+    <section class="list-container">
+        <article class="todo-app">
+            <div class="header">
+                <h1>ToDo App</h1>
+                <a href="https://github.com/FrankAlz" target="_blank">by FrankAlz</a>
+            </div>
+    
+            <article class="list round-border">
+                <div class="date">
+                    <p id="dateDay"></p>
+                    <div class="date-right">
+                        <div>
+                            <p id="dateNumber"></p>
+                            <p id="dateMonth"></p>
+                        </div>
+                        <p id="dateYear"></p>
+                    </div>
+                </div>
+            
+    
+                <form onsubmit="addNewTask(event)">
+                    <input type="text" name="taskName" autocomplete="off" placeholder="New Task" class="round-border">
+                    <input type="submit" class="add-task-btn" value="+">
+                    <input type="button" class="sort-btn round-border" onclick="renderOrderedTasks()" value="Sort">
+                    <input type="button" class="clear-btn round-border" onclick="clearTasks()" value="&#8634;">
+                </form>
+    
+                <article id="tasksContainer"></article>
+            </article>
+        </article>
+        <article class="social">
+            <a href="https://github.com/FrankAlz" target="_blank">github.com/Frank-Alvarz</a>
+            <a href="https://linkedin.com/in/frankz-alvarz/" target="_blank">linkedin.com/in/frankz-alvarz/</a>
+            <a href="https://stackoverflow.com/users/11690034/frank-alvarz" target="_blank">stackoverflow.com/frank-alvarz</a>
+        </article>
+    </section>
+
+    <script src="js/app.js" type="text/JavaScript"></script>
+</body>
+</html>

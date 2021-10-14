@@ -1,0 +1,165 @@
+:root{
+    --primary: #457B9D;
+    --secundary: #E63946;
+    --light: #F1FAEE;
+    --dark: #1D3557;
+    --disabled: #A8DADC;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:first-letter{
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 62.5%;
+    background-color: var(--light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.list-container{
+    min-width: 38rem;
+}
+
+.header{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    font-size: 3rem;
+    color: var(--dark);
+}    
+
+.header > h1{
+    text-align: center;
+    width: 100%;
+}
+
+.header > a{
+    text-decoration: none;
+    color: var(--secundary);
+    font-size: 2rem;
+}
+
+.round-border{
+    border-radius: 0.5rem;
+}
+
+.list{
+    padding: 2.5rem;
+}
+
+.date{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.date-right{
+    display: flex;
+    align-items: center;
+}
+
+#dateNumber{
+    font-size: 2.5rem;
+}
+
+#dateDay{
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+
+#dateMonth,
+#dateNumber,
+#dateDay{
+    font-weight: bold;
+}
+
+#dateMonth,
+#dateYear{
+    margin: 0 0.5rem 0 0;
+}
+
+#dateMonth{
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+#dateYear{
+    font-size: 6rem;
+    text-align: center;
+}
+
+form{
+    margin: 2rem 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 3rem auto;
+    grid-column-gap: 1.5rem;
+}
+
+input{
+    border: none;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+input:focus{
+    outline: none;
+}
+
+.add-task-btn,
+.sort-btn,
+.clear-btn{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add-task-btn{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    color: var(--light);
+    background-color: var(--dark);
+}
+
+.sort-btn{
+    color: var(--light);
+    background-color: var(--primary);
+}
+
+.clear-btn{
+    color: var(--light);
+    background-color: var(--secundary);
+}
+
+.task,
+.done{
+    font-size: 1.5rem;
+}
+
+.task{
+    background-color: var(--primary);
+    padding: 1.5rem;
+    margin: 1.5rem 0 0 0;    
+    color: var(--light);
+    cursor: pointer;
+}
+
+.done{
+    background-color: var(--disabled);
+    text-decoration: line-through;
+    color: var(--dark);
+}
+
+.social{
+    display: none;
+}
